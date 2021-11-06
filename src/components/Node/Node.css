@@ -1,0 +1,93 @@
+.node {
+  outline: 1px solid rgb(94, 94, 94);
+  border-radius: 10%;
+  height: 25px;
+  width: 25px;
+  display: table-cell;
+  padding: 0;
+  margin: 0;
+}
+.node-finish {
+  background-color: rgb(147, 147, 245);
+  background-image: url(../../img/finishLine.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.node-start {
+  background-color: rgb(118, 190, 118);
+  background-image: url(../../img/startPoint.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.node-wall {
+  background-color: rgb(0, 0, 0);
+}
+.node-stop {
+  background-color: rgb(168, 3, 132);
+}
+.node-weight {
+  background-color: rgba(228, 15, 15, 0.87);
+  background-image: url(../../img/weightNode.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.node-visited {
+  animation-name: visitedAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.node-shortest-path {
+  animation-name: shortestPath;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+@keyframes visitedAnimation {
+  0% {
+    transform: scale(0.3);
+    background-color: rgba(0, 0, 66, 0.75);
+    border-radius: 100%;
+  }
+
+  50% {
+    background-color: rgba(17, 104, 217, 0.75);
+  }
+
+  75% {
+    transform: scale(1.2);
+    background-color: rgba(0, 130, 217, 0.692);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgba(0, 102, 218, 0.75);
+  }
+}
+@keyframes shortestPath {
+  0% {
+    transform: scale(0.75);
+    background-color: rgb(241, 241, 11);
+  }
+
+  50% {
+    transform: scale(1.25);
+    background-color: rgb(153, 153, 15);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgb(253, 253, 0);
+  }
+}

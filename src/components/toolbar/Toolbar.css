@@ -1,0 +1,48 @@
+.helper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.helper>*{
+    margin:0 0.75% 0 0.75%;
+}
+.node {
+  outline: 1px solid rgb(94, 94, 94);
+  border-radius: 10%;
+  height: 25px;
+  width: 25px;  
+  display: table-cell;
+}
+.node-finish {
+  background-color: rgb(147, 147, 245);
+  background-image: url(../../img/finishLine.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.node-start {
+  background-color: rgb(118, 190, 118);
+  background-image: url(../../img/startPoint.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.node-wall {
+  background-color: rgb(0, 0, 0);
+}
+.node-stop {
+  background-color: rgb(168, 3, 132);
+}
+.node-weight {
+  background-color: rgba(228, 15, 15, 0.87);
+  background-image: url(../../img/weightNode.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.visitedAnimation {
+  background-color: rgba(0, 102, 218, 0.75);
+}
+.shortestPath {
+  background-color: rgb(253, 253, 0);
+}

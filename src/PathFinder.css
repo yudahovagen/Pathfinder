@@ -1,0 +1,60 @@
+.grid {
+  position: absolute;
+  margin: 4%;
+}
+.header {
+  display: flex;
+  margin: auto;
+  width: 75%;
+}
+.title {
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+.header > * {
+  margin: 2%;
+}
+.headLine {
+  background-color: #77286c;
+  margin-bottom: 1%;
+}
+.gridTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  font-family: fantasy;
+}
+.cost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  font-weight: bolder;
+  font-family: fantasy;
+}
+.explenation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  font-weight: bolder;
+  font-family: fantasy;
+}
+.costGrand{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  font-weight: bolder;
+  font-family: fantasy;
+}
+.gridRow {
+  padding: 0;
+  margin: 0;
+}
